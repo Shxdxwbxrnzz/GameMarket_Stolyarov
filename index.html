@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ігровий Ринок</title>
+    <title>GameMarket</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Перемістіть стилі CSS у зовнішній файл для кращої організації */
@@ -21,10 +21,17 @@
             width: calc(100% - 60px); /* трохи менша ширина, ніж у всій сторінці */
             max-width: 800px; /* максимальна ширина для більших екранів */
             margin: 0 auto; /* центрування блоку */
-            background-color: rgba(255, 255, 255, 0); /* прозорий фон */
+            background-color: rgb(252, 252, 252); /* прозорий фон */
             border-radius: 20px; /* закруглені кути */
             border: 3px solid white; /* біла рамка */
-            padding: 30px;
+            padding: 220px;
+            padding-bottom: 300px; /* висота */
+            margin-top: 100px; /* відступ зверху */
+            transition: transform 0.3s ease-in-out; /* плавне перетворення */
+        }
+
+        .content-box:hover {
+            transform: scale(1.05); /* збільшення на 5% при наведенні */
         }
 
         .content-text {
@@ -34,12 +41,33 @@
             text-align: justify; /* вирівнювання тексту */
         }
 
+        .content-text {
+            color: black; /* колір тексту */
+            font-family: 'Arial', sans-serif; /* шрифт тексту */
+            font-size: 18px; /* розмір тексту */
+            text-align: justify; /* вирівнювання тексту */
+        }
+
+        .content-image {
+            position: static; /* встановлюємо абсолютну позицію */
+            margin: 0 auto; /* центрування */
+            top: 0; /* відступ зверху */
+            bottom: 0; /* відступ знизу */
+            left: 0; /* відступ зліва */
+            right: 0; /* відступ справа */
+            width: 150%; /* ширина зображення */
+            height: auto; /* автоматична висота */
+            z-index: -1; /* зміщення за текст, щоб текст був видимим */
+        }
+
     </style>
 </head>
 
 <body>
-    <h1 class="page-title">Ігровий Ринок</h1>
-    <div class="content-box">
+    <h1 class="page-title">Game Market</h1>
+        <div class="content-box">
+            <!-- Зображення розміщене в середині верхньої частини блоку -->
+            <img class="content-image" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Ukraine.png" alt="ukraine">
         <p class="content-text">
             Тут буде ваш вміст про ігровий ринок.
         </p>
