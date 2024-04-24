@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 30px;
+    background: linear-gradient( to left, rgb(132, 0, 255), rgb(0, 102, 255));
+}
+
+div {
+    border: 2px solid white;
+}
