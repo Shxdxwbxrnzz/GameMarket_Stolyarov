@@ -34,11 +34,13 @@ let itemsArray = [
     {
         title: "Carpathians",
         image: "img/pb.png",
-        priseNormal: 5499,
-        priseDiscount: 4497,
-        priseCoupon: 4395,
-        lapka: 6,
-        pb: 8,
+        author:"Присяжнюк Богдана",
+        email: "",
+        group:"10-А 2",
+        game_gitnub:"",
+        game_pages:"",
+        market_pages:"",
+        stars: 5,
     },
 ]
 
@@ -54,18 +56,17 @@ if (itemsDiv) {
         </div>
         
         <div class="parts-pay">
-            <div><img src="https://proger.com.ua/upload/webp_cache/iblock/099/t86mp7yql1f8xfeihmxoewgg624f2sc7/lapka.webp" alt="mono">${item.lapka}</div>
-            <div><img src="img/img-2.png" alt="pie">${item.pb}</div>
+            <div><img src="https://www.pngall.com/wp-content/uploads/9/Golden-Star-PNG-Image-File.png" alt="stars">${item.stars}</div>
         </div>
         
-        <div class="price">
-          <div><span>${item.priseNormal}</span><sup>грн</sup></div>
-          <div><span>${item.priseDiscount}</span><sup>грн</sup></div>
+        <div class="info">
+          <div>GitHub</div>
+          <div>Market</div>
+          <div>Залишити відгук</div>
         </div>
         
         <div class="price bonus">
-          <div>Ціна за купоном</div>
-          <div><span>${item.priseCoupon}</span><sup>грн</sup></div>
+          <div>Грати</div>
         </div> 
 
         `

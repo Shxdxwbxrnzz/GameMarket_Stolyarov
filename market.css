@@ -8,7 +8,7 @@ body {
     font-family: Roboto;
     display: flex;
     background-image: url("img/bg.jpg");
-    background-size: 120%; 
+    background-size: 160%; 
     background-position: center;
     justify-content: center;
   }
@@ -92,34 +92,33 @@ content {
     height: 24px;
   }
 
-  .price {
+  .info {
     justify-content: space-around;
-    border: 1px solid rgb(202, 202, 202);
     border-radius: 5px;
     padding: 5px;
     display: flex;
   }
 
-  .price div:first-child {
+  .info div:first-child {
     width: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
     font-size: 20px;
   }
 
-  .price div:first-child span {
-    text-decoration: line-through;
+  .info div:nth-child(2) {
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    font-size: 20px;
   }
 
-  .price div:first-child sup {
-    font-size: 12px;
-  }
-
-  .price div:last-child {
+  .info div:last-child {
+    border-radius: 5px;
+    border: 1px solid rgb(202, 202, 202);
     font-size: 24px;
   }
 
-  .price div:last-child sup{
-    font-size: 14px;
-  }
 
   .bonus {
     background: rgb(253, 48, 48);
@@ -156,7 +155,7 @@ content {
     border-left: 3px solid rgb(253, 48, 48);
   }
 
-  .info {
+  .information {
     font-size: 9px;
     text-align: justify;
     color: rgb(120, 120, 120)
