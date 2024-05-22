@@ -7,36 +7,33 @@ body {
 
     font-family: Roboto;
     display: flex;
-    background-image: url("img/bg.jpg");
-    background-size: 120%; 
-    background-position: center;
+    background-color: #dfdfdf;
     justify-content: center;
   }
 
 content {
-    max-width: 1200px;
+    width: 800px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
 
-/* div {
+div {
   border: 1px solid darkgray;
-} */
+}
 
   .title {
     background: rgb(253, 48, 48);
-    width: 800px;
+    width: auto;
     margin-top: 20px;
     color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
     letter-spacing: 3px;
@@ -46,20 +43,18 @@ content {
     padding: 10px;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .item {
-    width: 800px;
-    display: flex;
+    min-width: 200px;
     min-height: 400px;
     margin-bottom: 10px;
     padding: 10px;
+
     background-color: #ffffff;
-    border-radius: 8px;
-    flex-direction: column;
-    justify-content: space-between;
+
+    border: 1px solid darkgray;
+    border-radius: 5px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   }
 
@@ -69,12 +64,10 @@ content {
 
   .item-image {
     height: 200px;
-    border-radius: 8px;
-  }
-
-  .item-image img{
-    height: 250px;
-    border-radius: 8px;
+    background-image: url(img/img-3.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .parts-pay {
@@ -84,19 +77,14 @@ content {
     justify-content: center;
   }
 
-  .part-pay {
-    width: 20px;
-  }
-
-  .parts-pay img {
-    height: 24px;
+  .part-pay img {
+    height: 20px;
   }
 
   .price {
-    justify-content: space-around;
-    border: 1px solid rgb(202, 202, 202);
+    border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 10px;
     display: flex;
   }
 
@@ -124,8 +112,7 @@ content {
   .bonus {
     background: rgb(253, 48, 48);
     color: white;
-    border-radius: 6px;
-    padding: 7px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
   }
